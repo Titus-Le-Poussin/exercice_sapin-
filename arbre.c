@@ -21,10 +21,17 @@ int main()
             }
         
         printf("\n");
-
     }
-    printf("||")
-    ;
+
+        if (LineNum > 0){
+            for (int l = 0; l < LineNum - 1; l++){
+                printf(" ");
+            }
+            printf("||");
+        }
+    
+
+
     return 0;
 
     }
