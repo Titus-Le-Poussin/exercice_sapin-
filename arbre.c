@@ -1,6 +1,20 @@
-#include <unistd.h>
+#include <stdio.h>
 
-void my_putchar(char c)
+
+
+
+int main()
 {
-    write(1, &c, 1);
-}
+    int LineNum;
+    printf("how many line: \n");
+    scanf("%d", &LineNum);
+    for (int i = 0 ; i <= LineNum; i++) {
+        for (int j = 1; j <= i; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    printf("||");
+    return 0;
+
+    }
