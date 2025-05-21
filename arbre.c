@@ -7,6 +7,16 @@ int main()
     printf("how many line: \n");
     scanf("%d", &LineNum);
 
+
+    if (LineNum < 0){
+        printf("c'est trop petit");
+        return 0;
+    }
+    if (LineNum > 30){
+        printf("c'est trop grand");
+        return 0;
+    }
+
     for (int i = 1 ; i <= LineNum; i++) {
 
         for (int k = 1; k <= LineNum - i; k++){
